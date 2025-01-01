@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #555;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    border-bottom: 1px solid #777;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #777;
+}
+
+/* General Styling for Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+
+}
+
+form input, form textarea, form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color:green;
+}
+
+/* Customer Reviews Section */
+#review-list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#reviews-display {
+    list-style: none;
+    padding: 0;
+}
+
+#reviews-display li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#reviews-display h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+#reviews-display p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#reviews-display .rating {
+    font-weight: bold;
+    color: #333;
+}
+footer {
+    background: black;
+    color:white;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Email Link Styling */
+.email-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Social Media Section */
+.social-media {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a.facebook {
+    background-color: #3b5998;
+}
+
+
+
+.social-media a.instagram {
+    background-color: #c13584;
+}
+
+
+.social-media a:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Pakistani & Chinese Cuisine - Gujranwala</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pakistani-menu">Pakistani Dishes</a></li>
+                        <li><a href="#chinese-menu">Chinese Dishes</a></li>
+                        <li><a href="#sweet-dishes">Sweet Dishes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+     <br>
+    <section id="home">
+        <h2>Welcome to Our Restaurant</h2>
+        <p>Experience the best of Pakistani and Chinese cuisine in Gujranwala. Book your table now!</p>
+    </section>
+    
+     <!-- About Us Section -->
+      <br>
+     <section id="about-us">
+        <h2>About Us</h2>
+        <p>
+            Welcome to <strong>Pakistani & Chinese Cuisine - Gujranwala</strong>, where tradition meets flavor. 
+            We are dedicated to providing our guests with authentic Pakistani and Chinese dishes in a warm and welcoming environment. 
+        </p>
+        <p>
+            Established in the heart of Gujranwala, our restaurant combines the finest ingredients, skilled chefs, and exceptional customer service 
+            to deliver an unforgettable dining experience. Whether you're here for a family dinner, a celebration, or just a casual meal, 
+            we promise a journey of delightful flavors.
+        </p>
+        <p>
+            Thank you for choosing us to be part of your dining adventures. Your satisfaction is our top priority!
+        </p>
+    </section>
+    <!-- Pakistani Menu Section -->
+     <br>
+    <section id="pakistani-menu">
+        <h2>Pakistani Dishes</h2>
+        <input type="text" id="pakistani-search" placeholder="Search for Pakistani dishes...">
+        <ul class="menu-list" id="pakistani-list">
+            <li>Biryani</li>
+            <li>Chicken Karahi</li>
+            <li>Beef Nihari</li>
+            <li>Haleem</li>
+            <li>Paya</li>
+        </ul>
+    </section>
+
+    <!-- Chinese Menu Section -->
+     <br>
+    <section id="chinese-menu">
+        <h2>Chinese Dishes</h2>
+        <input type="text" id="chinese-search" placeholder="Search for Chinese dishes...">
+        <ul class="menu-list" id="chinese-list">
+            <li>Chicken Manchurian</li>
+            <li>Sweet and Sour Chicken</li>
+            <li>Beef Chow Mein</li>
+            <li>Spring Rolls</li>
+            <li>Hot and Sour Soup</li>
+        </ul>
+    </section>
+
+    <!-- Sweet Dishes Section -->
+     <br>
+    <section id="sweet-dishes">
+        <h2>Sweet Dishes</h2>
+        <ul class="menu-list">
+            <li>Gulab Jamun</li>
+            <li>Jalebi</li>
+            <li>Kheer</li>
+            <li>Barfi</li>
+            <li>Halwa</li>
+        </ul>
+    </section>
+<!-- reservation section-->
+ <br>
+    <section id="reservations">
+        <h2>Reserve Your Table</h2>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+    
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+    
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+    
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" required>
+                <option value="" disabled selected>Select number of guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit">Reserve</button>
+        </form>
+        <p id="reservation-success"></p>
+    </section>
+
+
+    <!-- Login Form Section -->
+     <br>
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#signup">Register Here</a></p>
+        </form>
+    </section>
+
+    <!-- Signup Form Section -->
+     <br>
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="signup-name">Full Name:</label>
+            <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" name="username" placeholder="Choose a username" required>
+
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+
+            <label for="signup-confirm-password">Confirm Password:</label>
+            <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    <!-- Reviews Section -->
+     <br>
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <!-- Review Submission Form -->
+         <br>
+        <form id="review-form">
+            <label for="review-name">Name:</label>
+            <input type="text" id="review-name" name="name" placeholder="Enter your name" required>
+
+            <label for="review-text">Your Review:</label>
+            <textarea id="review-text" name="review" placeholder="Write your review here..." rows="4" required></textarea>
+
+            <label for="review-rating">Rating:</label>
+            <select id="review-rating" name="rating" required>
+                <option value="" disabled selected>Choose a rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <!-- Display Customer Reviews -->
+         <br>
+        <div id="review-list">
+            <h3>What Our Customers Say</h3>
+            <ul id="reviews-display"></ul>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+     \<br>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> fazal center, Gujranwala, Pakistan</p>
+        <p><strong>Phone:</strong> +92-300-1234567</p>
+        <p><strong>Email:</strong> <a href="mailto:aroobamughal144@gmail.com">aroobamughal144@gmail.com</a></p>
+    </section>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h3>Follow Us on Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/Arooba Mughal" target="_blank" class="social-link facebook">Facebook</a></li>
+                <li><a href="https://www.instagram.com/aroobamughal._" target="_blank" class="social-link instagram">Instagram</a></li>
+            
+            </ul>
+        </div>
+
+
+    <footer>
+        <p>&copy; 2024 Pakistani & Chinese Cuisine - Gujranwala</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
